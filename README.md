@@ -119,4 +119,3 @@ c << ln(n) << log*(n) << n << n^k << a^n << n# << n! << n^n << n ↑↑ k << n �
 ## Licence
 
 Ce projet est sous licence [MIT](LICENSE).
-```
