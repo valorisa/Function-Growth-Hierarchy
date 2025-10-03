@@ -16,6 +16,12 @@ Ce document présente une **hiérarchie complète des fonctions par ordre de cro
 ### 2. Fonctions Sous-linéaires (croissance très lente)
 - **Logarithme**: `ln(n)` ou `log(n)`
   - **Exemple**: Complexité de la recherche dichotomique (O(log n)).
+- **Racines**:
+  - **Racine carrée**: `√n` ou `n^(1/2)`
+    - **Exemple**: `√100 = 10`
+  - **Racine cubique**: `∛n` ou `n^(1/3)`
+    - **Exemple**: `∛27 = 3`
+  - **Croissance**: Plus lente que linéaire, mais plus rapide que logarithmique.
 - **Logarithme Itéré**: `log*(n)`
   - **Définition**: Nombre d’applications de `ln` pour obtenir un résultat ≤ 1.
   - **Exemple**: `log*(e^(e^(e^e))) = 4`
@@ -80,30 +86,26 @@ Ce document présente une **hiérarchie complète des fonctions par ordre de cro
 ## Résumé Visuel Complet (du plus lent au plus rapide)
 
 ```
-c << ln(n) << log*(n) << n << n^k << a^n << n# << n! << n^n << n ↑↑ k << n ↑^k m << A(n, n) << n → m → k << G(n) << TREE(n) << SCG(n)
+c << ln(n) << n^(1/k) << log*(n) << n << n^k << a^n << n# << n! << n^n << n ↑↑ k << n ↑^k m << A(n, n) << n → m → k << G(n) << TREE(n) << SCG(n)
 ```
 
 ---
 
-## Exemples Concrets pour n = 3
+## Exemples Concrets pour n = 100
 
-| Fonction               | Valeur pour n = 3                     | Croissance relative          |
-|------------------------|----------------------------------------|-------------------------------|
-| `c = 1`                | 1                                      | Constante                     |
-| `ln(3)`                | ≈ 1.0986                               | Sous-linéaire                 |
-| `log*(3)`              | 1                                      | Logarithme itéré              |
-| `n = 3`                | 3                                      | Linéaire                      |
-| `n^2 = 9`              | 9                                      | Polynomiale                   |
-| `2^n = 8`              | 8                                      | Exponentielle                 |
-| `n# = 2 × 3`           | 6                                      | Primorielle                   |
-| `n! = 6`               | 6                                      | Factorielle                   |
-| `n^n = 27`             | 27                                     | Super-exponentielle           |
-| `n ↑↑ 2 = n^n`         | 27                                     | Tétration                     |
-| `n ↑↑ 3 = 3^(3^3)`     | 7,625,597,484,987                      | Tétration                     |
-| `n ↑^3 2`              | `3 ↑↑ (3 ↑↑ 3)`                        | Flèches de Knuth (3 flèches)  |
-| `A(3, 3)`              | `2^(2^(2^2)) - 3`                      | Fonction d’Ackermann          |
-| `3 → 3 → 3`             | Équivalent à `3 ↑↑↑ 3`                | Flèches chaînées de Conway    |
-| `G(1)`                 | `3 ↑↑↑↑ 3`                             | Fonction de Graham            |
+| Fonction               | Valeur pour n = 100                     | Croissance relative          |
+|------------------------|------------------------------------------|-------------------------------|
+| `c = 1`                | 1                                        | Constante                     |
+| `ln(100)`              | ≈ 4.605                                  | Sous-linéaire                 |
+| `√n`                   | 10                                       | Racine carrée                 |
+| `∛n`                   | ≈ 4.64                                   | Racine cubique                |
+| `log*(100)`            | 2                                        | Logarithme itéré              |
+| `n = 100`              | 100                                      | Linéaire                      |
+| `n^2 = 10000`          | 10000                                    | Polynomiale                   |
+| `2^n`                  | ≈ 1.2677e+30                             | Exponentielle                 |
+| `n#`                   | ≈ 2.3056e+153 (produit des 25 premiers nombres premiers ≤ 100) | Primorielle |
+| `n!`                   | ≈ 9.3326e+157                             | Factorielle                   |
+| `n^n`                  | 100^100                                  | Super-exponentielle           |
 
 ---
 
@@ -119,3 +121,4 @@ c << ln(n) << log*(n) << n << n^k << a^n << n# << n! << n^n << n ↑↑ k << n �
 ## Licence
 
 Ce projet est sous licence [MIT](LICENSE).
+```
