@@ -189,4 +189,3 @@ Les contributions sont les bienvenues ! Voici comment contribuer :
 ## Licence
 
 Ce projet est sous licence [MIT](LICENSE).
-```

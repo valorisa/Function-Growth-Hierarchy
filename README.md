@@ -116,9 +116,8 @@ c << ln(n) << n^(1/k) << log*(n) << n << n^k << a^n << n# << n! << n^n << n ↑�
 3. **En théorie des nombres et combinatoire**: Elle permet de comprendre la taille des objets (ex. : nombres premiers, graphes).
 4. **En logique et informatique théorique**: Les fonctions au-delà de la tétration illustrent les limites des systèmes formels et des hiérarchies de complexité.
 
----
+
 
 ## Licence
 
 Ce projet est sous licence [MIT](LICENSE).
-```
